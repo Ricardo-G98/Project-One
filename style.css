@@ -1,103 +1,131 @@
- 
-.img_yt{
-    width: 150px;
-    height: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+	font-display: swap;
 }
 
-.img_spf{
-    width: 150px;
-    height: /*65px*/ 50px; 
-}
-
-.img_appleM{
-    width: 150px;
-    height: /*80px*/ 50px;
-}
-
-.img_AM{
-    width: 150px;
-    height: /*65px*/ 50px; 
-}
-
-.img_tidal{
-    width: 150px;
-    height: /*90px*/ 50px;
-}
-
-.img_SC{
-    width: 150px;
-    height: /*60px*/ 50px; 
-}
-
-.img_deezer{
-    width: 150px;
-    height: /*60px*/ 50px; 
-}
-
-.img_play{
-    width: 50px;
-    height: 50px;
-}
-
-.table {
-    border-spacing: 80px;
-    background-color: rgba(225, 0, 255, 0.842);
-    border-radius: 20px;
-    /*border: black 3px solid; */
-    
-        /* background-color: #fff; */
-        padding: 0px 0px;
-        text-align: center;
-        box-shadow: 0px 0px 25px rgb(0, 253, 253);
-        backdrop-filter: blur(2px);
-}
-
-.play:hover {
-    filter: opacity(.5);
-    border-radius:50%;
-    -webkit-border-radius:50%;
-    box-shadow: 0px 0px 10px 10px #00ffff;
-    -webkit-box-shadow: 0px 0px 10px 10px #00ffff;
+a{
+    text-decoration: none;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-body { 
-    font: 400 1em/1.5 "Neuton"; 
-    background-image: F1.png;
-    text-align: center; 
-    margin: 0 
+.astk{
+	width: 100%;
+	height: auto;
+	background-image: url('./image/F1.png');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0;
+	padding: 60px 0px;
 }
 
-span {
-
-  	font: 700 4em/1 "Oswald", sans-serif;
-  	letter-spacing: 0;
-  	padding: .25em 0 .325em;
-	  display: block;
-	  margin: 0 auto;
-  	text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
-
-/* Clip Background Image */
-
-    /*background-image: images.jpg;*/
-	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-      -webkit-background-clip: text;
-	  background-clip: text;
-
-/* Animate Background Image */
-
-	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
-	  -webkit-transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
+.astk__title{
+	overflow: hidden;
+	position: relative;
 }
 
-/* Animate Background Image */
+.astk__content{
+	width: calc(100% - 80px);
+	max-width: 600px;
+	border-radius: 20px;
+	padding: 70px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #800517a4;
+	box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
 
-@-webkit-keyframes aitf {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
+.astk__content__app{
+	padding: 2px 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 80px;
+	justify-content: space-between;
+}
+
+.astk__content__app__image__img{
+	width: 100%;
+	max-width: 210px;
+}
+
+.astk__content__app__link{
+	padding: 20px;
+	border-radius: 100%;
+	margin: 2px 0px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.astk__content__app__link__image{
+	position: absolute;
+	width: 100%;
+}
+
+.astk__content__app__link:hover{
+	background: #800517;
+}
+
+.astk__content__app_last{
+	padding: 0px 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h1{
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 50px;
+	font-weight: 800;
+	height: 100px;
+	padding: 50px;
+	text-transform: uppercase;
+	color: transparent;
+	text-align: center;
+	letter-spacing: 4px;
+	animation-name: focus;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	color:  #800517;
+	margin-bottom: 150px;
+}
+
+@keyframes focus {
+
+	0% {
+		text-shadow:0 0 60px  #800517, 0 10px 20px;
+		letter-spacing:10px;
+	}
+	20% {
+		text-shadow:0 0 0 #800517;
+		font-size: 80px;
+		letter-spacing:10px;
+	}
+	80% {
+		text-shadow:0 0 0 #800517;
+		font-size: 80px;
+		letter-spacing:10px;
+	}
+	100% {
+		text-shadow:0 0 60px  #800517, 0 10px 20px;
+		letter-spacing: 10px;
+	}
+
 }
