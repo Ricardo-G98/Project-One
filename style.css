@@ -46,11 +46,13 @@ a{
 
 .astk__content__app{
 	padding: 2px 40px;
+	padding-bottom: 40px;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	margin-bottom: 80px;
 	justify-content: space-between;
+	border-bottom: 2.5px solid rgb(0, 0, 0);
 }
 
 .astk__content__app__image__img{
@@ -99,7 +101,7 @@ h1{
 	text-align: center;
 	letter-spacing: 4px;
 	animation-name: focus;
-	animation-duration: 10s;
+	animation-duration: 7s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
